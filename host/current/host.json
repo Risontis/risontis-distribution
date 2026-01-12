@@ -1,0 +1,13 @@
+{
+  "hostVersion": "2.0.0",
+  "releaseType": "informational",
+  "updatesUrl": "https://risontis.com/updates",
+  "manifestPins": [
+    {
+      "userSymbol": "RisontisCoreLibrary",
+      "libraryId": "1NnMZ5COQPpBTg1Do1NMBjC_-MWaCk0KLqsTntqQBehHadaoK9_b1QkMe",
+      "version": "45",
+      "developmentMode": false
+    }
+  ]
+}
