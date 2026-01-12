@@ -9,5 +9,27 @@
       "version": "45",
       "developmentMode": false
     }
+  ],
+  "files": [
+    {
+      "name": "Bootstrap.js",
+      "url": "https://raw.githubusercontent.com/risontis/risontis-distribution/main/host/current/Bootstrap.js"
+    },
+    {
+      "name": "HostSidebar.js",
+      "url": "https://raw.githubusercontent.com/risontis/risontis-distribution/main/host/current/HostSidebar.js"
+    },
+    {
+      "name": "SetupTriggers.js",
+      "url": "https://raw.githubusercontent.com/risontis/risontis-distribution/main/host/current/SetupTriggers.js"
+    },
+    {
+      "name": "TradingConfig.js",
+      "url": "https://raw.githubusercontent.com/risontis/risontis-distribution/main/host/current/TradingConfig.js"
+    },
+    {
+      "name": "appsscript.json",
+      "url": "https://raw.githubusercontent.com/risontis/risontis-distribution/main/host/current/appsscript.json"
+    }
   ]
 }
