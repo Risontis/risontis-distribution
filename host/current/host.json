@@ -28,6 +28,10 @@
       "url": "https://raw.githubusercontent.com/risontis/risontis-distribution/main/host/current/TradingConfig.js"
     },
     {
+      "name": "host.js",
+      "url": "https://raw.githubusercontent.com/risontis/risontis-distribution/main/host/current/host.js"
+    },
+    {
       "name": "appsscript.json",
       "url": "https://raw.githubusercontent.com/risontis/risontis-distribution/main/host/current/appsscript.json"
     }
