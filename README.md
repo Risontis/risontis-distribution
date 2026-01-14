@@ -1,2 +1,3 @@
 # risontis-distribution
-Canonical distribution repository for Risontis update metadata and host bundles (read-only).
+
+Defines the current released version of Risontis for update checks.
