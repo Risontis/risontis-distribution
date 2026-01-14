@@ -2,11 +2,7 @@
   "latestRelease": {
     "version": "2.10",
     "date": "2026-01-14",
-    "summary": "Improved Monitor responsiveness and stability updates."
-  },
-  "previousRelease": {
-    "version": "2.9",
-    "date": "2025-12-03"
+    "summary": "Current stable release."
   },
   "updatesUrl": "https://risontis.com/updates"
 }
