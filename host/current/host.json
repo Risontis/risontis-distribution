@@ -4,5 +4,6 @@
     "date": "2026-01-14",
     "summary": "Current stable release."
   },
-  "updatesUrl": "https://risontis.com/updates"
+  "updatesUrl": "https://risontis.com/updates",
+  "notes": "Your current version is shown in the System Log."
 }
