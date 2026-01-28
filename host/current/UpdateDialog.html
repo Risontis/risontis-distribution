@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_blank">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest release</title>
+    <style>
+      :root {
+        --brand-dark: #19363B;
+        --brand-mint: #70C3A8;
+        --text-main: #202124;
+        --text-muted: #5f6368;
+        --border-soft: #E6E6E6;
+        --bg-soft: #F5F7F7;
+        --btn-primary-bg: #19363B;
+        --btn-secondary-border: #7a7a7a;
+        --btn-secondary-color: #4a4a4a;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        font-family: Arial, sans-serif;
+        color: var(--text-main);
+      }
+
+      .wrap {
+        padding: 18px 20px 16px 20px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 12px;
+      }
+
+      .logo {
+        width: 36px;
+        height: 36px;
+        border-radius: 6px;
+      }
+
+      .title {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--brand-dark);
+      }
+
+      .meta {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 6px 0 10px 0;
+      }
+
+      .summary {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+
+      .notes {
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-bottom: 16px;
+      }
+
+      .actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        padding-top: 8px;
+        border-top: 1px solid var(--border-soft);
+      }
+
+      .btn {
+        font-size: 13px;
+        padding: 8px 16px;
+        border-radius: 999px;
+        cursor: pointer;
+        border: 1px solid var(--btn-secondary-border);
+        background: transparent;
+        color: var(--btn-secondary-color);
+        text-decoration: none;
+        transition: all .15s ease;
+      }
+
+      .btn-primary {
+        background: var(--btn-primary-bg);
+        color: #ffffff;
+        border-color: var(--btn-primary-bg);
+      }
+
+      .btn:hover {
+        background: var(--brand-dark);
+        color: #EBD4F2; /* pink highlight */
+        border-color: var(--brand-dark);
+      }
+
+      .btn-primary:hover {
+        background: var(--brand-dark);
+        color: #EBD4F2; /* pink highlight */
+        border-color: var(--brand-dark);
+      }
+
+      .btn:active,
+      .btn-primary:active {
+        color: #EBD4F2; /* pink on click */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <img
+          class="logo"
+          src="https://risontis.com/wp-content/uploads/2025/09/cropped-favicon_bg_dark.png"
+          alt="Risontis"
+        />
+        <div class="title">Latest release:</div>
+      </div>
+
+      <div class="meta">
+        Version <?= version ?> — <?= date ?>
+      </div>
+
+      <? if (summary) { ?>
+        <div class="summary">
+          <?= summary ?>
+        </div>
+      <? } ?>
+
+      <div class="notes">
+        <? if (notes) { ?>
+          <?= notes ?>
+        <? } ?>
+        Your current version: <?= localVersion ?>
+      </div>
+
+      <div class="actions">
+        <button class="btn" onclick="google.script.host.close()">Close</button>
+        <a class="btn btn-primary" href="<?= updatesUrl ?>">Update instructions</a>
+      </div>
+    </div>
+  </body>
+</html>
